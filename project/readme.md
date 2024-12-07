@@ -24,11 +24,12 @@ In this section you should answer the following questions:
 * Why did you choose the constraints you did?
 
 ### Relationships
-_Entity Relationship Diagram Link: https://drive.google.com/file/d/1ulto4AndTlaULL7J6oJAUWirrnrF50li/view?usp=sharing_
+**_Entity Relationship Diagram Link:_** _https://drive.google.com/file/d/1ulto4AndTlaULL7J6oJAUWirrnrF50li/view?usp=sharing_
 
 **_Account-User Relationship (1:1):_** _The relationship between the account and user is a one to one relationship. An account can have at most one user. A user can be given by a particular account._
 
-ACCOUNT-ADMIN RELATIONSHIP (1:1): The relationship between the account and admin is one to one relationship. An account can have at most one Admin. An admin can be given by a particular account.
+**_Account-Admin Relationship (1:1):_** _The relationship between the account and admin is a one to one relationship. An account can have at most one admin. An admin can be given by a particular account._
+
 STREAMER-USER RELATIONSHIP (1:1): The relationship between the streamer and user is one to one relationship. A user can be at most one streamer. A streamer can be at most one user.
 USER-GAMES RELATIONSHIP (M:M): Relationship between user and games is many-to-many relationship. A specific user can play various games, while specific games can be play by various users.
 USER-ADS RELATIONSHIP (1:M): Relationship between User and Ads is one-to-many relationship. A specific user can create various ads, while specific ads belong to one user.
