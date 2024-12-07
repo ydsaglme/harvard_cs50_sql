@@ -36,11 +36,16 @@ In this section you should answer the following questions:
 
 **_User-Ads Relationship (1:M):_** _The relationship between the user and ads is one-to-many relationship. A specific user can create various ads, while specific ads belong to one user._
 
-USER-MESSAGE RELATIONSHIP (1:M): Relationship between user and message is one-to-many relationship. A specific user can message various people, while the messages sent belong to one user.
-STREAMER-STREAM RELATIONSHIP (1:M): Relationship between streamer and stream is one-to-one relationship. A specific streamer can stream at most various stream, while a specific stream can be streamed at most simultaneous by one streamer.
-POSTS-COMMENTS RELATIONSHIP (1:M): Relationship between posts and comments is one-to-many relationship. A specific comment can be in one post. One post can involve various comments.
-USER-COMMENTS RELATIONSHIP (1:M): Relationship between user and comments is one-to-many relationship. A specific user can various comments one post. User who comment is one user,
-USER-POST RELATIONSHIP (1:M): Relationship between user and relationship is one-to-many relationship. A specific user can create various posts, while specific post belong to one user.
+**_User-Message Relationship (1:M):_** _The relationship between user and message is one-to-many relationship. A specific user can message various people, while the messages sent belong to one user._
+
+**_Streamer-Stream Relationship (1:M):_** _The relationship between streamer and stream is one-to-many relationship. A specific streamer can stream at most various stream, while a specific stream can be streamed at most simultaneous by one streamer._
+
+**_Posts-Comments Relationship (1:M):_** _The relationship between posts and comments is one-to-many relationship. A specific comment can be in one post. However, one post can involve various comments._
+
+**_User-Comments Relationship (1:M):_** _The relationship between user and comments is one-to-many relationship. A specific user can make various comments on a post. However, user who makes it is just a single user._
+
+**_User-Posts Relationship (1:M):_** _The relationship between user and posts is one-to-many relationship. A specific user can create various posts, while specific post belong to one user._
+
 ADS–VEHICLE_ADS RELATIONSHIP (1:1): Relationship between ads and vehicle ads is one-to-one relationship. A vehicle ad must be an ad and an ad can be a vehicle ad or not.
 ADS–HOUSE_ADS RELATIONSHIP (1:1): Relationship between ads and house ads is one-to-one relationship. A house ad must be an ad and an ad can be a house or not.
 ADS–OTHER_PRODUCTS_ADS RELATIONSHIP (1:1): Relationship between ads and other products ads is one-to-one relationship. An other products ad must be an ad and an ad can be an other product or not.
