@@ -24,7 +24,7 @@ In this section you should answer the following questions:
 * Why did you choose the constraints you did?
 
 ### Relationships
-![entity_relationship_diagram](https://github.com/user-attachments/assets/cfb3de98-e0fd-4790-9bdf-a65d2d33b484)
+![entity_relationship_diagram](https://github.com/user-attachments/assets/099cfb5c-9b50-4a7b-90a0-daa1973cbe78)
 
 ## Optimizations
 
