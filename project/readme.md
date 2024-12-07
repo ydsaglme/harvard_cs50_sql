@@ -34,8 +34,8 @@ In this section you should answer the following questions:
 
 **_User-Games Relationship (M:M):_** _The relationship between the user and games is many-to-many relationship. A specific user can play various games, while specific games can be played by various users._
 
-USER-ADS RELATIONSHIP (1:M): Relationship between User and Ads is one-to-many relationship. A specific user can create various ads, while specific ads belong to one user.
-29
+**_User-Ads Relationship (1:M):_** _The relationship between the user and ads is one-to-many relationship. A specific user can create various ads, while specific ads belong to one user._
+
 USER-MESSAGE RELATIONSHIP (1:M): Relationship between user and message is one-to-many relationship. A specific user can message various people, while the messages sent belong to one user.
 STREAMER-STREAM RELATIONSHIP (1:M): Relationship between streamer and stream is one-to-one relationship. A specific streamer can stream at most various stream, while a specific stream can be streamed at most simultaneous by one streamer.
 POSTS-COMMENTS RELATIONSHIP (1:M): Relationship between posts and comments is one-to-many relationship. A specific comment can be in one post. One post can involve various comments.
