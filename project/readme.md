@@ -26,11 +26,11 @@ In this section you should answer the following questions:
 ### Relationships
 **_Entity Relationship Diagram Link:_** _https://drive.google.com/file/d/1ulto4AndTlaULL7J6oJAUWirrnrF50li/view?usp=sharing_
 
-**_Account-User Relationship (1:1):_** _The relationship between the account and user is one to one relationship. An account can have at most one user. A user can be given by a particular account._
+**_Account-User Relationship (1:1):_** _The relationship between the account and user is one-to-one relationship. An account can have at most one user. A user can be given by a particular account._
 
-**_Account-Admin Relationship (1:1):_** _The relationship between the account and admin is one to one relationship. An account can have at most one admin. An admin can be given by a particular account._
+**_Account-Admin Relationship (1:1):_** _The relationship between the account and admin is one-to-one relationship. An account can have at most one admin. An admin can be given by a particular account._
 
-**_Streamer-User Relationship (1:1):_** _The relationship between the streamer and user is one to one relationship. A user can be at most one streamer. A streamer can be at most one user._
+**_Streamer-User Relationship (1:1):_** _The relationship between the streamer and user is one-to-one relationship. A user can be at most one streamer. A streamer can be at most one user._
 
 **_User-Games Relationship (M:M):_** _The relationship between the user and games is many-to-many relationship. A specific user can play various games, while specific games can be played by various users._
 
