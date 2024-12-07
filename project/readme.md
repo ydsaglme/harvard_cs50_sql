@@ -24,7 +24,7 @@ In this section you should answer the following questions:
 * Why did you choose the constraints you did?
 
 ### Relationships
-In this section you should include your entity relationship diagram and describe the relationships between the entities in your database.
+![entity_relationship_diagram](https://github.com/user-attachments/assets/cfb3de98-e0fd-4790-9bdf-a65d2d33b484)
 
 ## Optimizations
 
