@@ -26,6 +26,25 @@ In this section you should answer the following questions:
 ### Relationships
 _Entity Relationship Diagram Link: https://drive.google.com/file/d/1ulto4AndTlaULL7J6oJAUWirrnrF50li/view?usp=sharing_
 
+**Account-User Relationship (1:1):** _The relationship between the account and user is a one to one relationship. An account can have at most one user. A user can be given by a particular account._
+
+ACCOUNT-ADMIN RELATIONSHIP (1:1): The relationship between the account and admin is one to one relationship. An account can have at most one Admin. An admin can be given by a particular account.
+STREAMER-USER RELATIONSHIP (1:1): The relationship between the streamer and user is one to one relationship. A user can be at most one streamer. A streamer can be at most one user.
+USER-GAMES RELATIONSHIP (M:M): Relationship between user and games is many-to-many relationship. A specific user can play various games, while specific games can be play by various users.
+USER-ADS RELATIONSHIP (1:M): Relationship between User and Ads is one-to-many relationship. A specific user can create various ads, while specific ads belong to one user.
+29
+USER-MESSAGE RELATIONSHIP (1:M): Relationship between user and message is one-to-many relationship. A specific user can message various people, while the messages sent belong to one user.
+STREAMER-STREAM RELATIONSHIP (1:M): Relationship between streamer and stream is one-to-one relationship. A specific streamer can stream at most various stream, while a specific stream can be streamed at most simultaneous by one streamer.
+POSTS-COMMENTS RELATIONSHIP (1:M): Relationship between posts and comments is one-to-many relationship. A specific comment can be in one post. One post can involve various comments.
+USER-COMMENTS RELATIONSHIP (1:M): Relationship between user and comments is one-to-many relationship. A specific user can various comments one post. User who comment is one user,
+USER-POST RELATIONSHIP (1:M): Relationship between user and relationship is one-to-many relationship. A specific user can create various posts, while specific post belong to one user.
+ADS–VEHICLE_ADS RELATIONSHIP (1:1): Relationship between ads and vehicle ads is one-to-one relationship. A vehicle ad must be an ad and an ad can be a vehicle ad or not.
+ADS–HOUSE_ADS RELATIONSHIP (1:1): Relationship between ads and house ads is one-to-one relationship. A house ad must be an ad and an ad can be a house or not.
+ADS–OTHER_PRODUCTS_ADS RELATIONSHIP (1:1): Relationship between ads and other products ads is one-to-one relationship. An other products ad must be an ad and an ad can be an other product or not.
+HOUSE_ADS–HOUSE_RENTAL_ADS RELATIONSHIP (1:1): Relationship between house ads and house rental ads is one-to-one relationship. A house rental ad must be a house ad and a house ad can be rental or not.
+HOUSE_ADS–FOR_SALE_HOUSE_ADS RELATIONSHIP (1:1): Relationship between house ads and for sale rental ads is one-to-one relationship. A for sale house ad must be a house ad and a house ad can be for sale or not.
+ADS–SAVED_ADS RELATIONSHIP (1:M): Relationship between ads and saved ads is one-to-many relationship. If we pick a saved ad, it must be an add but if we pick an add, there can be multiple saved ad related to that ad.
+
 ## Optimizations
 
 In this section you should answer the following questions:
