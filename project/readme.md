@@ -1,14 +1,7 @@
 # CS50’s Introduction to Databases with SQL
 ![Mountain   Stars](https://github.com/user-attachments/assets/ecce4111-4fc6-4707-99c8-9a9eaabc9f8f)
 
-# Design Document
-
-By YOUR NAME HERE
-
-Video overview: <URL HERE>
-
 ## Scope
-
 In this section you should answer the following questions:
 
 * What is the purpose of your database?
@@ -16,16 +9,13 @@ In this section you should answer the following questions:
 * Which people, places, things, etc. are *outside* the scope of your database?
 
 ## Functional Requirements
-
 In this section you should answer the following questions:
 
 * What should a user be able to do with your database?
 * What's beyond the scope of what a user should be able to do with your database?
 
 ## Representation
-
 ### Entities
-
 In this section you should answer the following questions:
 
 * Which entities will you choose to represent in your database?
@@ -34,7 +24,6 @@ In this section you should answer the following questions:
 * Why did you choose the constraints you did?
 
 ### Relationships
-
 In this section you should include your entity relationship diagram and describe the relationships between the entities in your database.
 
 ## Optimizations
