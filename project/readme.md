@@ -46,11 +46,16 @@ In this section you should answer the following questions:
 
 **_User-Posts Relationship (1:M):_** _The relationship between user and posts is one-to-many relationship. A specific user can create various posts, while specific post belong to one user._
 
-ADS–VEHICLE_ADS RELATIONSHIP (1:1): Relationship between ads and vehicle ads is one-to-one relationship. A vehicle ad must be an ad and an ad can be a vehicle ad or not.
-ADS–HOUSE_ADS RELATIONSHIP (1:1): Relationship between ads and house ads is one-to-one relationship. A house ad must be an ad and an ad can be a house or not.
+**_Ads–Vehicle_Ads Relationship (1:1):_** _The relationship between ads and vehicle ads is one-to-one relationship. A vehicle ad must be an ad, however, an ad can be a vehicle ad or not._
+
+**_Ads–House_Ads Relationship (1:1):_** _The relationship between ads and house ads is one-to-one relationship. A house ad must be an ad, however, an ad can be a house or not._
+
 ADS–OTHER_PRODUCTS_ADS RELATIONSHIP (1:1): Relationship between ads and other products ads is one-to-one relationship. An other products ad must be an ad and an ad can be an other product or not.
+
 HOUSE_ADS–HOUSE_RENTAL_ADS RELATIONSHIP (1:1): Relationship between house ads and house rental ads is one-to-one relationship. A house rental ad must be a house ad and a house ad can be rental or not.
+
 HOUSE_ADS–FOR_SALE_HOUSE_ADS RELATIONSHIP (1:1): Relationship between house ads and for sale rental ads is one-to-one relationship. A for sale house ad must be a house ad and a house ad can be for sale or not.
+
 ADS–SAVED_ADS RELATIONSHIP (1:M): Relationship between ads and saved ads is one-to-many relationship. If we pick a saved ad, it must be an add but if we pick an add, there can be multiple saved ad related to that ad.
 
 ## Optimizations
