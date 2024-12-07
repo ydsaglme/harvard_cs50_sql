@@ -2,7 +2,7 @@
 In this problem, you'll write freeform responses to the questions provided in the specification.
 
 ## Random Partitioning
-It ensures load balancing and scalability by evenly distributing, however multiple partitions must be queried to extract a meaningful output from the provided data. Which, in the end, increases overhead.
+Load will be balanced, thanks to even distribution. However, multiple partitions must be queried to extract a meaningful output from the provided data. Which, in the end, increases overhead.
 
 ## Partitioning by Hour
 Query performance will be optimized, thanks to keeping all the related datas together. On the other hand, there will be overloads in some parts due to uneven distribution.
