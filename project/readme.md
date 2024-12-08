@@ -16,13 +16,7 @@ In this section you should answer the following questions:
 
 ## Representation
 ### Entities & Attributes
-**_Account_**
-**_account_id (PK)_** 
-**_email_**
-**_password_**
-**_registered_phone_number_**
-**_registration_date_**
-**_account_type_**
+**_Account:_** _account_id (PK), email, password, registered_phone_number, registration_date, account_type_
 
 **_User_**
 **_user_id (PK)_**
