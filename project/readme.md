@@ -17,22 +17,8 @@ In this section you should answer the following questions:
 ## Representation
 ### Entities & Attributes
 **_Account:_** _account_id (PK), email, password, registered_phone_number, registration_date, account_type_
-
-**_User_**
-**_user_id (PK)_**
-**_account_id (FK)_**
-**_user_name_**
-**_phone_number_**
-**_date_of_birth_**
-**_gender_**
-**_user_address_**
-**_education_**
-
-**_Admin_**
-**_admin_id (PK)_**
-**_account_id (FK)_**
-**_admin_name_**
-**_admin_category_id_**
+**_User:_** _user_id (PK), account_id (FK), user_name, phone_number, date_of_birth, gender, user_address, education_
+**_Admin:_** _admin_id (PK), account_id (FK), admin_name, admin_category_id_
 
 * Why did you choose the constraints you did?
 
