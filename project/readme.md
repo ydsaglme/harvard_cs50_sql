@@ -50,13 +50,13 @@ In this section you should answer the following questions:
 
 **_Ads–House_Ads Relationship (1:1):_** _The relationship between ads and house ads is one-to-one relationship. A house ad must be an ad, however, an ad can be a house or not._
 
-ADS–OTHER_PRODUCTS_ADS RELATIONSHIP (1:1): Relationship between ads and other products ads is one-to-one relationship. An other products ad must be an ad and an ad can be an other product or not.
+**_Ads–Other_Products_Ads Relationship (1:1):_** _The relationship between ads and other products ads is one-to-one relationship. An other products ad must be an ad, however, an ad can be another product or not._
 
-HOUSE_ADS–HOUSE_RENTAL_ADS RELATIONSHIP (1:1): Relationship between house ads and house rental ads is one-to-one relationship. A house rental ad must be a house ad and a house ad can be rental or not.
+**_House_Ads–House_Rental_Ads Relationship (1:1):_** _The relationship between house ads and house rental ads is one-to-one relationship. A house rental ad must be a house ad, however, a house ad can be rental or not._
 
-HOUSE_ADS–FOR_SALE_HOUSE_ADS RELATIONSHIP (1:1): Relationship between house ads and for sale rental ads is one-to-one relationship. A for sale house ad must be a house ad and a house ad can be for sale or not.
+**_House_Ads–For_Sale_House_Ads Relationship (1:1):_** _The relationship between house ads and for sale rental ads is one-to-one relationship. A for sale house ad must be a house ad, however, a house ad can be for sale or not._
 
-ADS–SAVED_ADS RELATIONSHIP (1:M): Relationship between ads and saved ads is one-to-many relationship. If we pick a saved ad, it must be an add but if we pick an add, there can be multiple saved ad related to that ad.
+**_Ads–Saved_Ads Relationship (1:M):_** _The relationship between ads and saved ads is one-to-many relationship. If we pick a saved ad, it must be an add but if we pick an add, there can be multiple saved ad related to that ad._
 
 ## Optimizations
 
