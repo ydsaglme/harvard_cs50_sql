@@ -22,6 +22,16 @@ In this section you should answer the following questions:
 
 **_Admin:_** _admin_id (PK), account_id (FK), admin_name, admin_category_id_
 
+**_Play:_** _play_id (PK), game_id (FK), user_id (FK), time_stamp_
+
+**_Games:_** _game_id (PK), game_type_id, game_name, number_of_favs, number_of_players, game_description_
+
+**_Streamer:_** _streamer_id (PK), user_id (FK), streamer_mail, streamer_description, number_of_followers_
+
+**_Stream:_** _stream_id (PK), streamer_id (FK), stream_title, date_of_the_stream, duration, number_of_viewers, total_earning_
+
+**_Message:_** _message_id (PK), user_id (FK), contact_id, message_content, read_receipts, message_type, post_date_
+
 * Why did you choose the constraints you did?
 
 ### Relationships
