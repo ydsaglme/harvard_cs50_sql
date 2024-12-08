@@ -15,12 +15,15 @@ In this section you should answer the following questions:
 * What's beyond the scope of what a user should be able to do with your database?
 
 ## Representation
-### Entities
-In this section you should answer the following questions:
+### Entities & Attributes
+**_Account_**
+**_account_id (PK)_** 
+**_email_**
+**_password_**
+**_registered_phone_number_**
+**_registration_date_**
+**_account_type_**
 
-* Which entities will you choose to represent in your database?
-* What attributes will those entities have?
-* Why did you choose the types you did?
 * Why did you choose the constraints you did?
 
 ### Relationships
