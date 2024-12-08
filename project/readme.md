@@ -24,6 +24,22 @@ In this section you should answer the following questions:
 **_registration_date_**
 **_account_type_**
 
+**_User_**
+**_user_id (PK)_**
+**_account_id (FK)_**
+**_user_name_**
+**_phone_number_**
+**_date_of_birth_**
+**_gender_**
+**_user_address_**
+**_education_**
+
+**_Admin_**
+**_admin_id (PK)_**
+**_account_id (FK)_**
+**_admin_name_**
+**_admin_category_id_**
+
 * Why did you choose the constraints you did?
 
 ### Relationships
