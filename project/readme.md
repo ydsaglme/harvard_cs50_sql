@@ -32,6 +32,18 @@ In this section you should answer the following questions:
 
 **_Message:_** _message_id (PK), user_id (FK), contact_id, message_content, read_receipts, message_type, post_date_
 
+**_Ads:_** _ad_id (PK), user_id (FK), ad_type, date_of_ad, likes_
+
+**_Vehicle_Ads:_** _vehicle_ad_id (PK), ad_id (FK), vehicle_type, brand, model, vehicle_location, model_year, vehicle_price, vehicle_description_
+
+**_House_Ads:_** _house_ad_id (PK), ad_id (FK), number_of_bedroom, number_of_bathroom, type_of_sale, area_of_house_
+
+**_House_Rental_Ads:_** _house_rental_ad_id (PK), house_ad_id (FK), rental_fee, rental_house_address, rental_type, description_about_tenement, dog_acceptance_status, cat_acceptance_status_
+
+**_For_Sale_House_Ads:_** _for_sale_house_ad_id (PK), house_ad_id (FK), for_sale_house_address, purchase_fee_
+
+**_Other_Products_Ads:_** _other_products_ad_id (PK), ad_id (FK), ad_title, product_price, condition, product_description, stock_status, product_seller_address_
+
 * Why did you choose the constraints you did?
 
 ### Relationships
