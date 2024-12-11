@@ -44,6 +44,12 @@ In this section you should answer the following questions:
 
 **_Other_Products_Ads:_** _other_products_ad_id (PK), ad_id (FK), ad_title, product_price, condition, product_description, stock_status, product_seller_address_
 
+**_Saved_Ads:_** _saved_ad_id (PK), ad_id (FK), user_id (FK), saved_time_
+
+**_Posts:_** _post_id (PK), user_id (FK), content_reference, post_type, visibility, number_of_likes, published_at_
+
+**_Comments:_** _comment_id (PK), post_id (FK), user_id (FK), content, number_of_likes, published_at, location_
+
 * Why did you choose the constraints you did?
 
 ### Relationships
