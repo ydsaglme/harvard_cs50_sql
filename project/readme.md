@@ -6,15 +6,15 @@
 
 _The purpose is to examine the background structure of Facebook. Gaining knowledge about the relationships, data types, and operations necessary to efficiently support Facebook's features will be simpler as a result of the inspections that have been conducted. It will also make it easier to comprehend how Facebook handles user information, interactions, marketplace advertisements, games, streams, and administrative controls._
 
-**_People_**
+**_People (Inside)_**
 
 _Users, admins, and streamers._
 
-**_Places_**
+**_Places (Inside)_**
 
 _User addresses, rental house addresses, and vehicle locations._
 
-**_Things_**
+**_Things (Inside)_**
 
 _User accounts and profiles._
 
