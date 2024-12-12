@@ -6,14 +6,17 @@ In this section you should answer the following questions:
 
 * What is the purpose of your database?
 **_Which people, places, things, etc. are you including in the scope of your database?_**
-**_People:_** _Users, administrators, and streamers_
-**_Places:_** _User addresses, rental house addresses, and vehicle locations._
-Things:
-User accounts and profiles.
+**_People_**
+_Users, administrators, and streamers_
+**_Places_**
+_User addresses, rental house addresses, and vehicle locations._
+**_Things_**
+_User accounts and profiles.
 Posts, comments, and their metadata (likes, visibility).
 Marketplace items (houses, vehicles, other products, and related ads).
 Games, streams, and streaming details (titles, duration, earnings, and viewership).
-Messages sent between users.
+Messages sent between users._
+
 * Which people, places, things, etc. are *outside* the scope of your database?
 
 ## Functional Requirements
