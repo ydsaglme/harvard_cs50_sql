@@ -2,11 +2,9 @@
 ![Mountain   Stars](https://github.com/user-attachments/assets/ecce4111-4fc6-4707-99c8-9a9eaabc9f8f)
 
 ## Scope
-In this section you should answer the following questions:
+**_1) What is the purpose of your database?_**
 
-**_What is the purpose of your database?_**
-
-**_Which people, places, things, etc. are you including in the scope of your database?_**
+**_2) Which people, places, things, etc. are you including in the scope of your database?_**
 
 **_People_**
 
@@ -18,7 +16,7 @@ _User addresses, rental house addresses, and vehicle locations._
 
 **_Things_**
 
-_User accounts and profiles._
+_Users accounts and profiles._
 
 _Posts, comments, and their metadata (likes, visibility)._
 
@@ -28,7 +26,7 @@ _Games, streams, and streaming details (titles, duration, earnings, and viewersh
 
 _Messages sent between users._
 
-* Which people, places, things, etc. are *outside* the scope of your database?
+**_3) Which people, places, things, etc. are *outside* the scope of your database?_**
 
 ## Functional Requirements
 In this section you should answer the following questions:
