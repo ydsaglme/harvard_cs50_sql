@@ -70,7 +70,8 @@ In this section you should answer the following questions:
 
 **_Comments:_** _comment_id (PK), post_id (FK), user_id (FK), content, number_of_likes, published_at, location_
 
-* Why did you choose the constraints you did?
+### Constraints
+**_XXX_**
 
 ### Relationships
 **_Entity Relationship Diagram Link:_** _https://drive.google.com/file/d/1ulto4AndTlaULL7J6oJAUWirrnrF50li/view?usp=sharing_
