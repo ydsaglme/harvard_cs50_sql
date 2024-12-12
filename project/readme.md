@@ -10,9 +10,9 @@ _The purpose is to examine the background structure of Facebook. Gaining knowled
 
 _User accounts and profiles._
 
-_Messages sent between users._
-
 _Users, admins, and streamers._
+
+_Messages sent between users._
 
 _Posts, comments, and their metadata (likes, visibility, etc.)._
 
