@@ -8,7 +8,7 @@
 
 **_People_**
 
-_Users, administrators, and streamers._
+_Users, admins, and streamers._
 
 **_Places_**
 
@@ -16,13 +16,13 @@ _User addresses, rental house addresses, and vehicle locations._
 
 **_Things_**
 
-_Users accounts and profiles._
+_User accounts and profiles._
 
-_Posts, comments, and their metadata (likes, visibility)._
+_Posts, comments, and their metadata (likes, visibility, etc.)._
 
-_Marketplace items (houses, vehicles, other products, and related ads)._
+_Marketplace items (houses, vehicles, other products, related ads, etc.)._
 
-_Games, streams, and streaming details (titles, duration, earnings, and viewership)._
+_Games, streams, and streaming details (titles, duration, earnings, viewership, etc.)._
 
 _Messages sent between users._
 
