@@ -2,31 +2,33 @@
 ![Mountain   Stars](https://github.com/user-attachments/assets/ecce4111-4fc6-4707-99c8-9a9eaabc9f8f)
 
 ## Scope
-**_Purpose_**
+**_What is the purpose of your database?_**
 
 _The purpose is to examine the background structure of Facebook. Gaining knowledge about the relationships, data types, and operations necessary to efficiently support Facebook's features will be simpler as a result of the inspections that have been conducted. It will also make it easier to comprehend how Facebook handles user information, interactions, marketplace advertisements, games, streams, and administrative controls._
 
-**_People (Inside)_**
-
-_Users, admins, and streamers._
-
-**_Places (Inside)_**
-
-_User addresses, rental house addresses, and vehicle locations._
-
-**_Things (Inside)_**
+**_Which people, places, things, etc., are included in the scope of your database?_**
 
 _User accounts and profiles._
 
+_Messages sent between users._
+
+_Users, admins, and streamers._
+
 _Posts, comments, and their metadata (likes, visibility, etc.)._
+
+_User addresses, rental house addresses, and vehicle locations._
 
 _Marketplace items (houses, vehicles, other products, related ads, etc.)._
 
 _Games, streams, and streaming details (titles, duration, earnings, viewership, etc.)._
 
-_Messages sent between users._
+**_3) Which people, places, things, etc. are outside the scope of your database?_**
 
-**_3) Which people, places, things, etc. are *outside* the scope of your database?_**
+_Detailed geographical data beyond the address level._
+
+_Detailed financial records of Facebook itself (ad revenue, company expenses, etc.)._
+
+_Third-party advertisers or companies analyzing aggregated data from Facebook for marketing purposes._
 
 ## Functional Requirements
 In this section you should answer the following questions:
