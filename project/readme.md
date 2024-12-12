@@ -10,7 +10,7 @@ In this section you should answer the following questions:
 
 **_People_**
 
-_Users, administrators, and streamers_
+_Users, administrators, and streamers._
 
 **_Places_**
 
@@ -18,15 +18,15 @@ _User addresses, rental house addresses, and vehicle locations._
 
 **_Things_**
 
-_User accounts and profiles.
+_User accounts and profiles._
 
-Posts, comments, and their metadata (likes, visibility).
+_Posts, comments, and their metadata (likes, visibility)._
 
-Marketplace items (houses, vehicles, other products, and related ads).
+_Marketplace items (houses, vehicles, other products, and related ads)._
 
-Games, streams, and streaming details (titles, duration, earnings, and viewership).
+_Games, streams, and streaming details (titles, duration, earnings, and viewership)._
 
-Messages sent between users._
+_Messages sent between users._
 
 * Which people, places, things, etc. are *outside* the scope of your database?
 
