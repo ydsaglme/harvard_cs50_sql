@@ -4,7 +4,8 @@
 ## Scope
 In this section you should answer the following questions:
 
-* What is the purpose of your database?
+**_What is the purpose of your database?_**
+
 **_Which people, places, things, etc. are you including in the scope of your database?_**
 
 **_People_**
@@ -16,6 +17,7 @@ _Users, administrators, and streamers_
 _User addresses, rental house addresses, and vehicle locations._
 
 **_Things_**
+
 _User accounts and profiles.
 
 Posts, comments, and their metadata (likes, visibility).
