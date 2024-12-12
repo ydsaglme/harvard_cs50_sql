@@ -8,9 +8,11 @@ In this section you should answer the following questions:
 **_Which people, places, things, etc. are you including in the scope of your database?_**
 
 **_People_**
+
 _Users, administrators, and streamers_
 
 **_Places_**
+
 _User addresses, rental house addresses, and vehicle locations._
 
 **_Things_**
