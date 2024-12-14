@@ -13,7 +13,7 @@ CREATE TABLE "user" (
   "account_id" INTEGER,
   "user_name" TEXT NOT NULL,
   "phone_number" TEXT,
-  "date_of_birth"  NOT NULL,
+  "date_of_birth" NOT NULL,
   "gender" NUMERIC NOT NULL,
   "user_address" TEXT,
   "education" TEXT,
@@ -58,4 +58,3 @@ CREATE TABLE "streamer" (
   PRIMARY KEY ("streamer_id"),
   FOREIGN KEY ("user_id") REFERENCES "user"("user_id")
 );
-
