@@ -13,10 +13,19 @@ CREATE TABLE "user" (
   "account_id" INTEGER,
   "user_name" TEXT NOT NULL,
   "phone_number" TEXT,
-  "date_of_birth" ,
+  "date_of_birth"  NOT NULL,
   "gender" NUMERIC NOT NULL,
   "user_address" TEXT,
   "education" TEXT,
   PRIMARY KEY ("user_id"),
+  FOREIGN KEY ("account_id") REFERENCES "account"("account_id")
+);
+
+CREATE TABLE "admin" (
+  "admin_id" INTEGER,
+  "account_id" INTEGER,
+  "admin_name" TEXT NOT NULL,
+  "admin_category_id" NUMERIC NOT NULL
+  PRIMARY KEY ("admin_id")
   FOREIGN KEY ("account_id") REFERENCES "account"("account_id")
 );
