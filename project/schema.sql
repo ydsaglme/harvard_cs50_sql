@@ -118,3 +118,16 @@ CREATE TABLE "house_ads" (
   PRIMARY KEY ("house_ad_id"),
   FOREIGN KEY ("ad_id") REFERENCES "ads"("ad_id")
 );
+
+CREATE TABLE "house_rental_ads" (
+  "house_rental_ad_id" INTEGER,
+  "house_ad_id" INTEGER,
+  "rental_fee" NUMERIC NOT NULL,
+  "rental_house_address" TEXT NOT NULL,
+  "rental_type" NUMERIC NOT NULL,
+  "description_about_tenement" TEXT NOT NULL,
+  "dog_acceptance_status" CHECK ("account_type" IN ('yes', 'no'),
+  "cat_acceptance_status" CHECK ("account_type" IN ('yes', 'no'),
+  PRIMARY KEY ("house_rental_ad_id"),
+  FOREIGN KEY ("house_ad_id") REFERENCES "house_ads"("house_ad_id")
+);
