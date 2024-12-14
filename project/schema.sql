@@ -34,7 +34,7 @@ CREATE TABLE "play" (
   "play_id" INTEGER,
   "game_id" INTEGER,
   "user_id" INTEGER,
-  time_stamp ,
+  time_stamp ? ,
   PRIMARY KEY ("play_id"),
   FOREIGN KEY ("game_id") REFERENCES "game"("game_id"),
   FOREIGN KEY ("user_id") REFERENCES "user"("user_id")
@@ -63,7 +63,7 @@ CREATE TABLE "stream" (
   "stream_id" INTEGER,
   "streamer_id" INTEGER,
   "stream_title" TEXT NOT NULL,
-  "date_of_the_stream" ,
+  "date_of_the_stream" ? ,
   "duration" NUMERIC NOT NULL,
   "number_of_viewers" NUMERIC NOT NULL,
   "total_earning" NUMERIC,
