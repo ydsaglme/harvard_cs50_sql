@@ -58,3 +58,29 @@ CREATE TABLE "streamer" (
   PRIMARY KEY ("streamer_id"),
   FOREIGN KEY ("user_id") REFERENCES "user"("user_id")
 );
+
+CREATE TABLE "stream" (
+  "stream_id" INTEGER,
+  "streamer_id" INTEGER,
+  "stream_title" TEXT NOT NULL,
+  "date_of_the_stream" ,
+  "duration" NUMERIC NOT NULL,
+  "number_of_viewers" NUMERIC NOT NULL,
+  "total_earning" NUMERIC,
+  PRIMARY KEY ("stream_id"),
+  FOREIGN KEY ("streamer_id") REFERENCES "streamer"("streamer_id")
+);
+
+CREATE TABLE "message" (
+  "message_id" INTEGER,
+  "user_id" INTEGER,
+  "contact_id" INTEGER,
+  "message_content" TEXT,
+  "read_receipts" NUMERIC NOT NULL,
+  "message_type" NUMERIC NOT NULL,
+  "post_date" ? NOT NULL,
+  PRIMARY KEY ("message_id"),
+  FOREIGN KEY ("user_id") REFERENCES "user"("user_id"),
+  FOREIGN KEY ("contact_id") REFERENCES "user"("user_id")
+);
+
