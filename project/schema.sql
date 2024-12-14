@@ -84,3 +84,26 @@ CREATE TABLE "message" (
   FOREIGN KEY ("contact_id") REFERENCES "user"("user_id")
 );
 
+CREATE TABLE "ads" (
+  "ad_id" INTEGER,
+  "user_id" INTEGER,
+  "ad_type" NUMERIC NOT NULL,
+  "date_of_ad" ? NOT NULL,
+  "likes" NUMERIC NOT NULL,
+  PRIMARY KEY ("ad_id"),
+  FOREIGN KEY ("user_id") REFERENCES "user"("user_id"),
+);
+
+CREATE TABLE "vehicle_ads" (
+  "vehicle_ad_id" INTEGER,
+  "ad_id" INTEGER,
+  "vehicle_type" NUMERIC NOT NULL,
+  "brand" TEXT NOT NULL,
+  "model" TEXT NOT NULL,
+  "vehicle_location" NOT NULL,
+  "model_year" NUMERIC NOT NULL,
+  "vehicle_price" NUMERIC NOT NULL,
+  "vehicle_description" TEXT NOT NULL,
+  PRIMARY KEY ("vehicle_ad_id"),
+  FOREIGN KEY ("ad_id") REFERENCES "ads"("ad_id")
+);
