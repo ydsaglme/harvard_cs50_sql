@@ -107,3 +107,14 @@ CREATE TABLE "vehicle_ads" (
   PRIMARY KEY ("vehicle_ad_id"),
   FOREIGN KEY ("ad_id") REFERENCES "ads"("ad_id")
 );
+
+CREATE TABLE "house_ads" (
+  "house_ad_id" INTEGER,
+  "ad_id" INTEGER,
+  "number_of_bedroom" NUMERIC NOT NULL,
+  "number_of_bathroom" NUMERIC NOT NULL,
+  "type_of_sale" CHECK ("account_type" IN ('yes', 'no'),
+  "area_of_house" NUMERIC NOT NULL,
+  PRIMARY KEY ("house_ad_id"),
+  FOREIGN KEY ("ad_id") REFERENCES "ads"("ad_id")
+);
