@@ -184,7 +184,7 @@ CREATE TABLE "saved_ads" (
 CREATE TABLE "posts" (
   "post_id" INTEGER,
   "user_id" INTEGER,
-  "content_reference" ?? NOT NULL,
+  "content_reference" TEXT NOT NULL,
   "post_type" NUMERIC NOT NULL,
   "visibility" NUMERIC NOT NULL,
   "number_of_likes" NUMERIC NOT NULL,
