@@ -31,10 +31,25 @@ _Detailed financial records of Facebook itself (ad revenue, company expenses, et
 _Third-party advertisers or companies analyzing aggregated data from Facebook for marketing purposes._
 
 ## Functional Requirements
-In this section you should answer the following questions:
+**_1) What should a user be able to do with your database?_**
 
-* What should a user be able to do with your database?
-* What's beyond the scope of what a user should be able to do with your database?
+_A user should be able to:_
+
+_Register and log in using their email or phone number._
+
+_View, like, and comment on posts from friends or followed pages._
+
+_Edit their profile information, such as location and personal details._
+
+_Send and receive messages or video calls through Messenger._
+
+_Access the marketplace to browse, buy, or sell items (e.g., products, cars, houses)._
+
+_Play games, watch game streams, and save or record gameplay._
+
+_Save ads, posts, or other content for later reference._
+
+**_What's beyond the scope of what a user should be able to do with your database?_**
 
 ## Representation
 ### Entities & Attributes
