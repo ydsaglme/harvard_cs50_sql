@@ -40,7 +40,7 @@ CREATE TABLE "play" (
   "user_id" INTEGER,
   "time_stamp" ? ,
   PRIMARY KEY ("play_id"),
-  FOREIGN KEY ("game_id") REFERENCES "game"("game_id"),
+  FOREIGN KEY ("game_id") REFERENCES "games"("game_id"),
   FOREIGN KEY ("user_id") REFERENCES "user"("user_id")
 );
 
