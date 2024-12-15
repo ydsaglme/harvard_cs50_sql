@@ -137,18 +137,18 @@ In this section you should answer the following questions:
 
 ## Limitations
 
-**_What are the limitations of your design?_**
-
-_- While the design outlines key relationships, it may not account for handling the immense scale and dynamic nature of real-world Facebook data._
+**_1) What are the limitations of your design?_**
 
 _- The design may struggle with real-time synchronization across globally distributed users, such as live streaming or instant messaging._
 
 _- The design does not explicitly detail measures for encryption, access control, or data anonymization to protect sensitive user information._
 
-**_What might your database not be able to represent very well?_**
+_- While the design outlines key relationships, it may not account for handling the immense scale and dynamic nature of real-world Facebook data._
 
-_1) New and dynamic Facebook features, such as AI-driven recommendations or advanced augmented reality interactions, may not align well with the static schema._
+**_2) What might your database not be able to represent very well?_**
 
-_2) The database is not designed to directly infer complex user behavior patterns, such as trends, habits, or psychological impacts._
+_- Complex user behavior patterns (trends, habits, psychological impacts, etc.)._
 
-_3) Integrating data from external platforms like Instagram, WhatsApp, or third-party apps is beyond the scope of the current design._
+_- Data integration from external platforms (Instagram, WhatsApp, third-party apps, etc.)._
+
+_- New and dynamic Facebook features (AI-driven recommendations, advanced augmented reality interactions, etc.)._
