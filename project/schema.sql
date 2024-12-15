@@ -38,7 +38,7 @@ CREATE TABLE "play" (
   "play_id" INTEGER,
   "game_id" INTEGER,
   "user_id" INTEGER,
-  "time_stamp" ? ,
+  "time_stamp" NUMERIC NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY ("play_id"),
   FOREIGN KEY ("game_id") REFERENCES "games"("game_id"),
   FOREIGN KEY ("user_id") REFERENCES "user"("user_id")
@@ -71,7 +71,7 @@ CREATE TABLE "stream" (
   "stream_id" INTEGER,
   "streamer_id" INTEGER,
   "stream_title" TEXT NOT NULL,
-  "date_of_the_stream" ? ,
+  "date_of_the_stream" NUMERIC NOT NULL DEFAULT CURRENT_TIMESTAMP,
   "duration" NUMERIC NOT NULL,
   "number_of_viewers" NUMERIC NOT NULL,
   "total_earning" NUMERIC,
@@ -87,7 +87,7 @@ CREATE TABLE "message" (
   "message_content" TEXT,
   "read_receipts" NUMERIC NOT NULL,
   "message_type" NUMERIC NOT NULL,
-  "post_date" ? NOT NULL,
+  "post_date" NUMERIC NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY ("message_id"),
   FOREIGN KEY ("user_id") REFERENCES "user"("user_id"),
   FOREIGN KEY ("contact_id") REFERENCES "user"("user_id")
@@ -98,7 +98,7 @@ CREATE TABLE "ads" (
   "ad_id" INTEGER,
   "user_id" INTEGER,
   "ad_type" NUMERIC NOT NULL,
-  "date_of_ad" ? NOT NULL,
+  "date_of_ad" NUMERIC NOT NULL DEFAULT CURRENT_TIMESTAMP,
   "likes" NUMERIC NOT NULL,
   PRIMARY KEY ("ad_id"),
   FOREIGN KEY ("user_id") REFERENCES "user"("user_id")
@@ -174,7 +174,7 @@ CREATE TABLE "saved_ads" (
   "saved_ad_id" INTEGER,
   "ad_id" INTEGER,
   "user_id" INTEGER,
-  "saved_time" ? NOT NULL,
+  "saved_time" NUMERIC NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY ("saved_ad_id"),
   FOREIGN KEY ("ad_id") REFERENCES "ads"("ad_id"),
   FOREIGN KEY ("user_id") REFERENCES "user"("user_id")
@@ -188,7 +188,7 @@ CREATE TABLE "posts" (
   "post_type" NUMERIC NOT NULL,
   "visibility" NUMERIC NOT NULL,
   "number_of_likes" NUMERIC NOT NULL,
-  "published_at" ? NOT NULL,
+  "published_at" NUMERIC NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY ("post_id"),
   FOREIGN KEY ("user_id") REFERENCES "user"("user_id")
 );
