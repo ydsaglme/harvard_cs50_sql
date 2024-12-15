@@ -150,8 +150,8 @@ CREATE TABLE "for_sale_house_ads" (
   "house_ad_id" INTEGER,
   "for_sale_house_address" TEXT NOT NULL,
   "purchase_fee" NUMERIC NOT NULL,
-  PRIMARY KEY "for_sale_house_ad_id",
-  FOREIGN KEY "house_ad_id" REFERENCES "house_ads"("house_ad_id")
+  PRIMARY KEY ("for_sale_house_ad_id"),
+  FOREIGN KEY ("house_ad_id") REFERENCES "house_ads"("house_ad_id")
 );
 
 --Other Products Ads
@@ -164,8 +164,8 @@ CREATE TABLE "other_products_ads" (
   "product_description" TEXT,
   "stock_status" CHECK ("stock_status" IN ('yes', 'no')) NOT NULL,
   "product_seller_address" TEXT,
-  PRIMARY KEY "other_products_ad_id",
-  FOREIGN KEY "ad_id" REFERENCES "ads"("ad_id")
+  PRIMARY KEY ("other_products_ad_id"),
+  FOREIGN KEY ("ad_id") REFERENCES "ads"("ad_id")
 );
 
 --Saved Ads
@@ -174,9 +174,9 @@ CREATE TABLE "saved_ads" (
   "ad_id" INTEGER,
   "user_id" INTEGER,
   "saved_time" ? NOT NULL,
-  PRIMARY KEY "saved_ad_id",
-  FOREIGN KEY "ad_id" REFERENCES "ads"("ad_id"),
-  FOREIGN KEY "user_id" REFERENCES "user"("user_id")
+  PRIMARY KEY ("saved_ad_id"),
+  FOREIGN KEY ("ad_id") REFERENCES "ads"("ad_id"),
+  FOREIGN KEY ("user_id") REFERENCES "user"("user_id")
 );
 
 --Posts
@@ -188,8 +188,8 @@ CREATE TABLE "posts" (
   "visibility" NUMERIC NOT NULL,
   "number_of_likes" NUMERIC NOT NULL,
   "published_at" ? NOT NULL,
-  PRIMARY KEY "post_id",
-  FOREIGN KEY "user_id" REFERENCES "user"("user_id")
+  PRIMARY KEY ("post_id"),
+  FOREIGN KEY ("user_id") REFERENCES "user"("user_id")
 );
 
 --Comments
@@ -201,7 +201,7 @@ CREATE TABLE "comments" (
   "number_of_likes" NUMERIC NOT NULL,
   "published_at" ? NOT NULL,
   "location" NUMERIC NOT NULL,
-  PRIMARY KEY "comment_id",
-  FOREIGN KEY "post_id" REFERENCES "posts"("post_id"),
-  FOREIGN KEY "user_id" REFERENCES "user"("user_id")
+  PRIMARY KEY ("comment_id"),
+  FOREIGN KEY ("post_id") REFERENCES "posts"("post_id"),
+  FOREIGN KEY ("user_id") REFERENCES "user"("user_id")
 );
