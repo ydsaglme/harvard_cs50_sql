@@ -33,8 +33,6 @@ _Third-party advertisers or companies analyzing aggregated data from Facebook fo
 ## Functional Requirements
 **_1) What should a user be able to do with your database?_**
 
-_A user should be able to:_
-
 _Register and log in using their email or phone number._
 
 _View, like, and comment on posts from friends or followed pages._
