@@ -8,52 +8,52 @@ _The purpose is to examine the background structure of Facebook. Gaining knowled
 
 **_2) Which people, places, things, etc., are included in the scope of your database?_**
 
-_User accounts and profiles._
+_- User accounts and profiles._
 
-_Users, admins, and streamers._
+_- Users, admins, and streamers._
 
-_Messages sent between users._
+_- Messages sent between users._
 
-_Posts, comments, and their metadata (likes, visibility, etc.)._
+_- Posts, comments, and their metadata (likes, visibility, etc.)._
 
-_User addresses, rental house addresses, and vehicle locations._
+_- User addresses, rental house addresses, and vehicle locations._
 
-_Marketplace items (houses, vehicles, other products, related ads, etc.)._
+_- Marketplace items (houses, vehicles, other products, related ads, etc.)._
 
-_Games, streams, and streaming details (titles, duration, earnings, viewership, etc.)._
+_- Games, streams, and streaming details (titles, duration, earnings, viewership, etc.)._
 
 **_3) Which people, places, things, etc. are outside the scope of your database?_**
 
-_Detailed geographical data beyond the address level._
+_- Detailed geographical data beyond the address level._
 
-_Detailed financial records of Facebook itself (ad revenue, company expenses, etc.)._
+_- Detailed financial records of Facebook itself (ad revenue, company expenses, etc.)._
 
-_Third-party advertisers or companies analyzing aggregated data from Facebook for marketing purposes._
+_- Third-party advertisers or companies analyzing aggregated data from Facebook for marketing purposes._
 
 ## Functional Requirements
 **_1) What should a user be able to do with your database?_**
 
-_Register and log in using their email or phone number._
+_- Register and log in using their email or phone number._
 
-_View, like, and comment on posts from friends or followed pages._
+_- View, like, and comment on posts from friends or followed pages._
 
-_Edit their profile information, such as location and personal details._
+_- Edit their profile information, such as location and personal details._
 
-_Send and receive messages or video calls through Messenger._
+_- Send and receive messages or video calls through Messenger._
 
-_Access the marketplace to browse, buy, or sell items (e.g., products, cars, houses)._
+_- Access the marketplace to browse, buy, or sell items (e.g., products, cars, houses)._
 
-_Play games, watch game streams, and save or record gameplay._
+_- Play games, watch game streams, and save or record gameplay._
 
-_Save ads, posts, or other content for later reference._
+_- Save ads, posts, or other content for later reference._
 
 **_2) What's beyond the scope of what a user should be able to do with your database?_**
 
-_Interfere with the administrative functionalities, such as moderating ads, posts, or streams._
+_- Interfere with the administrative functionalities, such as moderating ads, posts, or streams._
 
-_Directly manipulate or delete data stored in the database, such as altering records for ads, games, or system-level settings._
+_- Directly manipulate or delete data stored in the database, such as altering records for ads, games, or system-level settings._
 
-_Access backend operations like data queries, reporting, or the database structure itself._
+_- Access backend operations like data queries, reporting, or the database structure itself._
 
 ## Representation
 ### Entities & Attributes
