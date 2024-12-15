@@ -78,6 +78,7 @@ CREATE TABLE "stream" (
   FOREIGN KEY ("streamer_id") REFERENCES "streamer"("streamer_id")
 );
 
+--Message
 CREATE TABLE "message" (
   "message_id" INTEGER,
   "user_id" INTEGER,
@@ -91,6 +92,7 @@ CREATE TABLE "message" (
   FOREIGN KEY ("contact_id") REFERENCES "user"("user_id")
 );
 
+--Ads
 CREATE TABLE "ads" (
   "ad_id" INTEGER,
   "user_id" INTEGER,
@@ -101,6 +103,7 @@ CREATE TABLE "ads" (
   FOREIGN KEY ("user_id") REFERENCES "user"("user_id"),
 );
 
+--Vehicle Ads
 CREATE TABLE "vehicle_ads" (
   "vehicle_ad_id" INTEGER,
   "ad_id" INTEGER,
@@ -115,6 +118,7 @@ CREATE TABLE "vehicle_ads" (
   FOREIGN KEY ("ad_id") REFERENCES "ads"("ad_id")
 );
 
+--House Ads
 CREATE TABLE "house_ads" (
   "house_ad_id" INTEGER,
   "ad_id" INTEGER,
@@ -126,6 +130,7 @@ CREATE TABLE "house_ads" (
   FOREIGN KEY ("ad_id") REFERENCES "ads"("ad_id")
 );
 
+--House Rental Ads
 CREATE TABLE "house_rental_ads" (
   "house_rental_ad_id" INTEGER,
   "house_ad_id" INTEGER,
@@ -139,15 +144,17 @@ CREATE TABLE "house_rental_ads" (
   FOREIGN KEY ("house_ad_id") REFERENCES "house_ads"("house_ad_id")
 );
 
+--For Sale House Ads
 CREATE TABLE "for_sale_house_ads" (
   "for_sale_house_ad_id" INTEGER,
   "house_ad_id" INTEGER,
   "for_sale_house_address" TEXT NOT NULL,
   "purchase_fee" NUMERIC NOT NULL,
   PRIMARY KEY "for_sale_house_ad_id",
-  FOREIGN KEY "house_ad_id" REFERENCESS "house_ads"("house_ad_id")
+  FOREIGN KEY "house_ad_id" REFERENCES "house_ads"("house_ad_id")
 );
 
+--Other Products Ads
 CREATE TABLE "other_products_ads" (
   "other_products_ad_id" INTEGER,
   "ad_id" INTEGER,
@@ -161,6 +168,7 @@ CREATE TABLE "other_products_ads" (
   FOREIGN KEY "ad_id" REFERENCES "ads"("ad_id")
 );
 
+--Saved Ads
 CREATE TABLE "saved_ads" (
   "saved_ad_id" INTEGER,
   "ad_id" INTEGER,
@@ -171,6 +179,7 @@ CREATE TABLE "saved_ads" (
   FOREIGN KEY "user_id" REFERENCES "user"("user_id")
 );
 
+--Posts
 CREATE TABLE "posts" (
   "post_id" INTEGER,
   "user_id" INTEGER,
@@ -183,6 +192,7 @@ CREATE TABLE "posts" (
   FOREIGN KEY "user_id" REFERENCES "user"("user_id")
 );
 
+--Comments
 CREATE TABLE "comments" (
   "comment_id" INTEGER,
   "post_id" INTEGER,
