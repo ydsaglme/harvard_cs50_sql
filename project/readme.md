@@ -139,11 +139,11 @@ In this section you should answer the following questions:
 
 **_What are the limitations of your design?_**
 
-_1) While the design outlines key relationships, it may not account for handling the immense scale and dynamic nature of real-world Facebook data._
+_- While the design outlines key relationships, it may not account for handling the immense scale and dynamic nature of real-world Facebook data._
 
-_2) The design may struggle with real-time synchronization across globally distributed users, such as live streaming or instant messaging._
+_- The design may struggle with real-time synchronization across globally distributed users, such as live streaming or instant messaging._
 
-_3) The design does not explicitly detail measures for encryption, access control, or data anonymization to protect sensitive user information._
+_- The design does not explicitly detail measures for encryption, access control, or data anonymization to protect sensitive user information._
 
 **_What might your database not be able to represent very well?_**
 
