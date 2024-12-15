@@ -49,7 +49,7 @@ _Play games, watch game streams, and save or record gameplay._
 
 _Save ads, posts, or other content for later reference._
 
-**_What's beyond the scope of what a user should be able to do with your database?_**
+**_2) What's beyond the scope of what a user should be able to do with your database?_**
 
 ## Representation
 ### Entities & Attributes
