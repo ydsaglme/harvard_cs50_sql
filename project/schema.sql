@@ -23,6 +23,7 @@ CREATE TABLE "user" (
   FOREIGN KEY ("account_id") REFERENCES "account"("account_id")
 );
 
+--Admin
 CREATE TABLE "admin" (
   "admin_id" INTEGER,
   "account_id" INTEGER,
@@ -32,16 +33,18 @@ CREATE TABLE "admin" (
   FOREIGN KEY ("account_id") REFERENCES "account"("account_id")
 );
 
+--Play
 CREATE TABLE "play" (
   "play_id" INTEGER,
   "game_id" INTEGER,
   "user_id" INTEGER,
-  time_stamp ? ,
+  "time_stamp" ? ,
   PRIMARY KEY ("play_id"),
   FOREIGN KEY ("game_id") REFERENCES "game"("game_id"),
   FOREIGN KEY ("user_id") REFERENCES "user"("user_id")
 );
 
+--Games
 CREATE TABLE "games" (
   "game_id" INTEGER,
   "game_type_id" NUMERIC NOT NULL,
@@ -51,6 +54,7 @@ CREATE TABLE "games" (
   "game_description" TEXT NOT NULL
 );
 
+--Streamer
 CREATE TABLE "streamer" (
   "streamer_id" INTEGER,
   "user_id" INTEGER,
@@ -61,6 +65,7 @@ CREATE TABLE "streamer" (
   FOREIGN KEY ("user_id") REFERENCES "user"("user_id")
 );
 
+--Stream
 CREATE TABLE "stream" (
   "stream_id" INTEGER,
   "streamer_id" INTEGER,
