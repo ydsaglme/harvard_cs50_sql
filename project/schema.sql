@@ -1,3 +1,4 @@
+--Account
 CREATE TABLE "account" (
   "account_id" INTEGER,
   "email" TEXT NOT NULL,
@@ -8,6 +9,7 @@ CREATE TABLE "account" (
   PRIMARY KEY ("account_id")
 );
 
+--User
 CREATE TABLE "user" (
   "user_id" INTEGER,
   "account_id" INTEGER,
