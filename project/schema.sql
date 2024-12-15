@@ -5,7 +5,7 @@ CREATE TABLE "account" (
   "password" TEXT NOT NULL,
   "registered_phone_number" TEXT,
   "registration_date" NOT NULL,
-  "account_type" CHECK ("account_type" IN ('yes', 'no'),
+  "account_type" CHECK ("account_type" IN ('yes', 'no') NOT NULL,
   PRIMARY KEY ("account_id")
 );
 
@@ -100,7 +100,7 @@ CREATE TABLE "ads" (
   "date_of_ad" ? NOT NULL,
   "likes" NUMERIC NOT NULL,
   PRIMARY KEY ("ad_id"),
-  FOREIGN KEY ("user_id") REFERENCES "user"("user_id"),
+  FOREIGN KEY ("user_id") REFERENCES "user"("user_id")
 );
 
 --Vehicle Ads
@@ -124,7 +124,7 @@ CREATE TABLE "house_ads" (
   "ad_id" INTEGER,
   "number_of_bedroom" NUMERIC NOT NULL,
   "number_of_bathroom" NUMERIC NOT NULL,
-  "type_of_sale" CHECK ("account_type" IN ('yes', 'no'),
+  "type_of_sale" CHECK ("type_of_sale" IN ('yes', 'no') NOT NULL,
   "area_of_house" NUMERIC NOT NULL,
   PRIMARY KEY ("house_ad_id"),
   FOREIGN KEY ("ad_id") REFERENCES "ads"("ad_id")
@@ -138,8 +138,8 @@ CREATE TABLE "house_rental_ads" (
   "rental_house_address" TEXT NOT NULL,
   "rental_type" NUMERIC NOT NULL,
   "description_about_tenement" TEXT NOT NULL,
-  "dog_acceptance_status" CHECK ("account_type" IN ('yes', 'no'),
-  "cat_acceptance_status" CHECK ("account_type" IN ('yes', 'no'),
+  "dog_acceptance_status" CHECK ("dog_acceptance_status" IN ('yes', 'no') NOT NULL,
+  "cat_acceptance_status" CHECK ("cat_acceptance_status" IN ('yes', 'no') NOT NULL,
   PRIMARY KEY ("house_rental_ad_id"),
   FOREIGN KEY ("house_ad_id") REFERENCES "house_ads"("house_ad_id")
 );
