@@ -51,7 +51,8 @@ CREATE TABLE "games" (
   "game_name" TEXT NOT NULL,
   "number_of_favs" NUMERIC NOT NULL,
   "number_of_players" NUMERIC NOT NULL,
-  "game_description" TEXT NOT NULL
+  "game_description" TEXT NOT NULL,
+  PRIMARY KEY ("game_id")
 );
 
 --Streamer
