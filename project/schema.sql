@@ -5,7 +5,7 @@ CREATE TABLE "account" (
   "password" TEXT NOT NULL,
   "registered_phone_number" TEXT,
   "registration_date" NOT NULL,
-  "account_type" CHECK ("account_type" IN ('yes', 'no') NOT NULL,
+  "account_type" CHECK ("account_type" IN ('yes', 'no')) NOT NULL,
   PRIMARY KEY ("account_id")
 );
 
@@ -124,7 +124,7 @@ CREATE TABLE "house_ads" (
   "ad_id" INTEGER,
   "number_of_bedroom" NUMERIC NOT NULL,
   "number_of_bathroom" NUMERIC NOT NULL,
-  "type_of_sale" CHECK ("type_of_sale" IN ('yes', 'no') NOT NULL,
+  "type_of_sale" CHECK ("type_of_sale" IN ('yes', 'no')) NOT NULL,
   "area_of_house" NUMERIC NOT NULL,
   PRIMARY KEY ("house_ad_id"),
   FOREIGN KEY ("ad_id") REFERENCES "ads"("ad_id")
@@ -138,8 +138,8 @@ CREATE TABLE "house_rental_ads" (
   "rental_house_address" TEXT NOT NULL,
   "rental_type" NUMERIC NOT NULL,
   "description_about_tenement" TEXT NOT NULL,
-  "dog_acceptance_status" CHECK ("dog_acceptance_status" IN ('yes', 'no') NOT NULL,
-  "cat_acceptance_status" CHECK ("cat_acceptance_status" IN ('yes', 'no') NOT NULL,
+  "dog_acceptance_status" CHECK ("dog_acceptance_status" IN ('yes', 'no')) NOT NULL,
+  "cat_acceptance_status" CHECK ("cat_acceptance_status" IN ('yes', 'no')) NOT NULL,
   PRIMARY KEY ("house_rental_ad_id"),
   FOREIGN KEY ("house_ad_id") REFERENCES "house_ads"("house_ad_id")
 );
@@ -162,7 +162,7 @@ CREATE TABLE "other_products_ads" (
   "product_price" NUMERIC NOT NULL,
   "condition" NUMERIC,
   "product_description" TEXT,
-  "stock_status" CHECK ("account_type" IN ('yes', 'no'),
+  "stock_status" CHECK ("stock_status" IN ('yes', 'no')) NOT NULL,
   "product_seller_address" TEXT,
   PRIMARY KEY "other_products_ad_id",
   FOREIGN KEY "ad_id" REFERENCES "ads"("ad_id")
