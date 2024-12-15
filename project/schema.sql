@@ -200,7 +200,7 @@ CREATE TABLE "comments" (
   "user_id" INTEGER,
   "content" TEXT NOT NULL,
   "number_of_likes" NUMERIC NOT NULL,
-  "published_at" ? NOT NULL,
+  "published_at" NUMERIC NOT NULL DEFAULT CURRENT_TIMESTAMP,
   "location" NUMERIC NOT NULL,
   PRIMARY KEY ("comment_id"),
   FOREIGN KEY ("post_id") REFERENCES "posts"("post_id"),
