@@ -49,6 +49,12 @@ _Save ads, posts, or other content for later reference._
 
 **_2) What's beyond the scope of what a user should be able to do with your database?_**
 
+_Interfere with the administrative functionalities, such as moderating ads, posts, or streams._
+
+_Directly manipulate or delete data stored in the database, such as altering records for ads, games, or system-level settings._
+
+_Access backend operations like data queries, reporting, or the database structure itself._
+
 ## Representation
 ### Entities & Attributes
 **_Account:_** _account_id (PK), email, password, registered_phone_number, registration_date, account_type_
@@ -131,7 +137,18 @@ In this section you should answer the following questions:
 
 ## Limitations
 
-In this section you should answer the following questions:
+**_What are the limitations of your design?_**
 
-* What are the limitations of your design?
-* What might your database not be able to represent very well?
+_1) While the design outlines key relationships, it may not account for handling the immense scale and dynamic nature of real-world Facebook data._
+
+_2) The design may struggle with real-time synchronization across globally distributed users, such as live streaming or instant messaging._
+
+_3) The design does not explicitly detail measures for encryption, access control, or data anonymization to protect sensitive user information._
+
+**_What might your database not be able to represent very well?_**
+
+_1) New and dynamic Facebook features, such as AI-driven recommendations or advanced augmented reality interactions, may not align well with the static schema._
+
+_2) The database is not designed to directly infer complex user behavior patterns, such as trends, habits, or psychological impacts._
+
+_3) Integrating data from external platforms like Instagram, WhatsApp, or third-party apps is beyond the scope of the current design._
