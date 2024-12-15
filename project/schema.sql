@@ -131,3 +131,60 @@ CREATE TABLE "house_rental_ads" (
   PRIMARY KEY ("house_rental_ad_id"),
   FOREIGN KEY ("house_ad_id") REFERENCES "house_ads"("house_ad_id")
 );
+
+CREATE TABLE "for_sale_house_ads" (
+  "for_sale_house_ad_id" INTEGER,
+  "house_ad_id" INTEGER,
+  "for_sale_house_address" TEXT NOT NULL,
+  "purchase_fee" NUMERIC NOT NULL,
+  PRIMARY KEY "for_sale_house_ad_id",
+  FOREIGN KEY "house_ad_id" REFERENCESS "house_ads"("house_ad_id")
+);
+
+CREATE TABLE "other_products_ads" (
+  "other_products_ad_id" INTEGER,
+  "ad_id" INTEGER,
+  "ad_title" TEXT NOT NULL,
+  "product_price" NUMERIC NOT NULL,
+  "condition" NUMERIC,
+  "product_description" TEXT,
+  "stock_status" CHECK ("account_type" IN ('yes', 'no'),
+  "product_seller_address" TEXT,
+  PRIMARY KEY "other_products_ad_id",
+  FOREIGN KEY "ad_id" REFERENCES "ads"("ad_id")
+);
+
+CREATE TABLE "saved_ads" (
+  "saved_ad_id" INTEGER,
+  "ad_id" INTEGER,
+  "user_id" INTEGER,
+  "saved_time" ? NOT NULL,
+  PRIMARY KEY "saved_ad_id",
+  FOREIGN KEY "ad_id" REFERENCES "ads"("ad_id"),
+  FOREIGN KEY "user_id" REFERENCES "user"("user_id")
+);
+
+CREATE TABLE "posts" (
+  "post_id" INTEGER,
+  "user_id" INTEGER,
+  "content_reference" ?? NOT NULL,
+  "post_type" NUMERIC NOT NULL,
+  "visibility" NUMERIC NOT NULL,
+  "number_of_likes" NUMERIC NOT NULL,
+  "published_at" ? NOT NULL,
+  PRIMARY KEY "post_id",
+  FOREIGN KEY "user_id" REFERENCES "user"("user_id")
+);
+
+CREATE TABLE "comments" (
+  "comment_id" INTEGER,
+  "post_id" INTEGER,
+  "user_id" INTEGER,
+  "content" TEXT NOT NULL,
+  "number_of_likes" NUMERIC NOT NULL,
+  "published_at" ? NOT NULL,
+  "location" NUMERIC NOT NULL,
+  PRIMARY KEY "comment_id",
+  FOREIGN KEY "post_id" REFERENCES "posts"("post_id"),
+  FOREIGN KEY "user_id" REFERENCES "user"("user_id")
+);
