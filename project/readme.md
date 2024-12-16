@@ -131,9 +131,7 @@ _- Access backend operations like data queries, reporting, or the database struc
 
 ## Optimizations
 
-In this section you should answer the following questions:
-
-* Which optimizations (e.g., indexes, views) did you create? Why?
+_Which optimizations (e.g., indexes, views) did you create? Why?_
 
 ## Limitations
 
