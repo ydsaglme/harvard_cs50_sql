@@ -1,1 +1,3 @@
-SELECT "season" AS "Season", COUNT("episode_in_season") AS "Number of Episodes" FROM "episodes" WHERE 10 <= "season" <= 14 AND "topic" IS NULL GROUP BY "season";
+SELECT "season", COUNT("episode_in_season") AS "number_of_episodes" FROM "episodes"
+WHERE 10 <= "season" <= 14 AND "topic" IS NULL
+GROUP BY "season";
