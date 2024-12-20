@@ -27,7 +27,7 @@ CREATE TABLE "companies" (
 CREATE TABLE "user_to_user" (
     "follower_id" INTEGER,
     "followed_id" INTEGER,
-    FOREIGN KEY ("follower_id") REFERENCES "users"("id"),
+    FOREIGN KEY ("followed_id") REFERENCES "users"("id"),
     FOREIGN KEY ("followed_id") REFERENCES "users"("id")
 );
 
