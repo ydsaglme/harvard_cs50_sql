@@ -1,1 +1,1 @@
-SELECT AVG("per_pupil_expenditure") AS "Average District Per-Pupil Expenditure" FROM "expenditures";
+SELECT AVG("per_pupil_expenditure") AS "average_district_per_pupil_expenditure" FROM "expenditures";
