@@ -1,3 +1,4 @@
-SELECT "city" AS "City", COUNT("name") AS "Number of Schools" FROM "schools"
+SELECT "city", COUNT("name") AS "number_of_schools" FROM "schools"
 WHERE "type" = 'Public School'
-GROUP BY "City" HAVING "Number of Schools" <= 3 ORDER BY "Number of Schools" DESC, "City";
+GROUP BY "city" HAVING "number_of_schools" <= 3
+ORDER BY "number_of_schools" DESC, "city";
