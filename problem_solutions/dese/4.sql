@@ -1,3 +1,4 @@
-SELECT "city" AS "City", COUNT("name") AS "Number of Schools" FROM "schools"
+SELECT "city", COUNT("name") AS "number_of_schools" FROM "schools"
 WHERE "type" = 'Public School'
-GROUP BY "City" ORDER BY "Number of Schools" DESC, "City" LIMIT 10;
+GROUP BY "city"
+ORDER BY "number_of_schools" DESC, "city" LIMIT 10;
