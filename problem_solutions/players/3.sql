@@ -1,1 +1,2 @@
-SELECT "id" FROM "players" WHERE "debut" IS NULL;
+SELECT "id" FROM "players"
+WHERE "debut" IS NULL;
