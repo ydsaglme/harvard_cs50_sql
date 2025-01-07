@@ -1,5 +1,5 @@
 # CS50’s Introduction to Databases with SQL
-![Mountain   Stars](https://github.com/user-attachments/assets/ecce4111-4fc6-4707-99c8-9a9eaabc9f8f)
+![Facebook](https://github.com/user-attachments/assets/a17b0665-addc-4809-a3e2-581038f66ebe)
 
 ## Scope
 **_1) What is the purpose of your database?_**
