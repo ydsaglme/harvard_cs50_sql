@@ -5,4 +5,5 @@ WHERE "districts"."type" = 'Public School District' AND "expenditures"."per_pupi
     SELECT AVG("per_pupil_expenditure") FROM "expenditures"
 ) AND "staff_evaluations"."exemplary" > (
     SELECT AVG("exemplary") FROM "staff_evaluations"
-) GROUP BY "districts"."name" ORDER BY "staff_evaluations"."exemplary" DESC, "expenditures"."per_pupil_expenditure" DESC;
+) GROUP BY "districts"."name"
+ORDER BY "staff_evaluations"."exemplary" DESC, "expenditures"."per_pupil_expenditure" DESC;
