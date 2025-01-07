@@ -3,7 +3,6 @@
 
 ## Scope
 **_1) What is the purpose of your database?_**
-
 _The purpose is to examine the background structure of Facebook. Gaining knowledge about the relationships, data types, and operations necessary to efficiently support Facebook's features will be simpler as a result of the inspections that have been conducted. It will also make it easier to comprehend how Facebook handles user informations, interactions, marketplace advertisements, games, streams, and administrative controls._
 
 **_2) Which people, places, things, etc., are included in the scope of your database?_**
