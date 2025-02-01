@@ -92,7 +92,17 @@ _- Access backend operations like data queries, reporting, or the database struc
 **_Comments:_** _comment_id (PK), post_id (FK), user_id (FK), content, number_of_likes, published_at, location_
 
 ### Constraints
-**_XXX_**
+**_User Authentication:_** _Requires a valid email or phone number; strong password rules apply._
+
+**_Messaging & Communication:_** _Ensures privacy, supports blocking/reporting, and video calls._
+
+**_Access Control:_** _Admins manage content; users have limited modification rights._
+
+**_Legal & Ethical:_** _Complies with data laws (GDPR, CCPA), allows data deletion._
+
+**_Marketplace:_** _Ads must follow regulations; transactions require verification._
+
+**_Security:_** _Uses encryption, hashing, and protection against cyber threats._
 
 ### Relationships
 **_Entity Relationship Diagram Link:_** _https://drive.google.com/file/d/1ulto4AndTlaULL7J6oJAUWirrnrF50li/view?usp=sharing_
