@@ -92,13 +92,13 @@ _- Access backend operations like data queries, reporting, or the database struc
 **_Comments:_** _comment_id (PK), post_id (FK), user_id (FK), content, number_of_likes, published_at, location_
 
 ### Constraints
+**_Legal & Ethical:_** _Complies with data laws (GDPR, CCPA), allows data deletion (GDPR: General Data Protection Regulation, CCPA: California Consumer Privacy Act)._
+
 **_User Authentication:_** _Requires a valid email or phone number; strong password rules apply._
 
-**_Messaging & Communication:_** _Ensures privacy, supports blocking/reporting, and video calls._
+**_Communication:_** _Ensures privacy, supports blocking or reporting, and video calls._
 
 **_Access Control:_** _Admins manage content; users have limited modification rights._
-
-**_Legal & Ethical:_** _Complies with data laws (GDPR, CCPA), allows data deletion._
 
 **_Marketplace:_** _Ads must follow regulations; transactions require verification._
 
