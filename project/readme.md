@@ -140,7 +140,14 @@ _- Access backend operations like data queries, reporting, or the database struc
 **_Ads–Saved_Ads Relationship (1:M):_** _The relationship between ads and saved ads is one-to-many relationship. If we pick a saved ad, it must be an add but if we pick an add, there can be multiple saved ad related to that ad._
 
 ## Optimizations
-> _CREATE INDEX idx_account_email ON account(email);_
+> _CREATE INDEX idx_user_name ON user(user_name); (Index for user search by name)_
+> _CREATE INDEX idx_games_type ON games(game_type_id); (Index for game searches by type)_
+> _CREATE INDEX idx_posts_likes ON posts(number_of_likes DESC); (Index for fast retrieval of popular posts)_
+_Index for optimizing search by post publication date_
+> _CREATE INDEX idx_posts_published_at ON posts(published_at DESC);_
+> 
+> 
+> 
 
 ## Limitations
 **_1) What are the limitations of your design?_**
