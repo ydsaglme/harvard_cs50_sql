@@ -144,18 +144,26 @@ _1) Index for user search by name_
 ```
 CREATE INDEX user_user_name ON user(user_name);
 ```
-_2) Index for fast ad retrieval by type_
+_2) Index for post lookup by type_
+```
+CREATE INDEX posts_post_type ON posts(post_type);
+```
+_3) Index for game searches by type_
+```
+CREATE INDEX games_game_type_id ON games(game_type_id);
+```
+_4) Index for fast ad retrieval by type_
 ```
 CREATE INDEX ads_ad_type ON ads(ad_type);
 ```
-
-_CREATE INDEX posts_post_type ON posts(post_type); (Index for post lookup by type)_
-
-_CREATE INDEX games_game_type_id ON games(game_type_id); (Index for game searches by type)_
-
-_CREATE INDEX posts_number_of_likes ON posts(number_of_likes DESC); (Index for fast retrieval of popular posts)_
-
-_CREATE INDEX posts_published_at ON posts(published_at DESC); (Index for optimizing search by post publication date)_
+_5) Index for fast retrieval of popular posts_
+```
+CREATE INDEX posts_number_of_likes ON posts(number_of_likes DESC);
+```
+_6) Index for optimizing search by post publication date_
+```
+CREATE INDEX posts_published_at ON posts(published_at DESC);
+```
 
 ## Limitations
 **_1) What are the limitations of your design?_**
